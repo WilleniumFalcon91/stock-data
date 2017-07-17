@@ -713,4 +713,16 @@ function getNumber(stocks, values) {
 // example: getNumber(stocks, "1. open");
 
 
+//Here we create a function that results in the average of our data. We take the array of numbers we had before and now reduce them to create our sum, then divide that by 100 to return our average. 
+function average(stocks, values) {
+    var number = getNumber(stocks, values);
+    number = number.reduce(function(open, value) {
+        return (Number(open) + Number(value))
+    }) 
+    / 100;
+    return number;
+}
+
+// exampple : average(stocks, "1. open");
+
 
