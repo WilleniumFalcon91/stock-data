@@ -737,3 +737,7 @@ function sortsHigh(stocks) {
     return i.reverse();
 }
 
+//sorting a specific value from low to high is almost the same the function two examples up! The only difference is we pass it a specific key. 
+function sortsLow(stocks) {
+    return sorts(stocks, "3. low");
+}
