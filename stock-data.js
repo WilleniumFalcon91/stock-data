@@ -725,4 +725,8 @@ function average(stocks, values) {
 
 // exampple : average(stocks, "1. open");
 
-
+//Here we create a function that sorts our array data. In this instance, from low to high. 
+function sorts(stocks, values) {
+    var values = getNumber(stocks, values);
+    return values.sort();
+}
