@@ -741,3 +741,12 @@ function sortsHigh(stocks) {
 function sortsLow(stocks) {
     return sorts(stocks, "3. low");
 }
+
+//Finally, we want to get the opening a closing data for a daily report.
+function dailyReport(stocks) {
+    var day = Object.keys(stocks);
+    day = day.map(function(x) {
+        return "Day: " + x + " Open: " + stocks[x]["1. open"] + " Close: " + stocks[x]["4. close"] + "\n"
+    })
+    return console.log(day);
+}
