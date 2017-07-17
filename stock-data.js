@@ -730,3 +730,10 @@ function sorts(stocks, values) {
     var values = getNumber(stocks, values);
     return values.sort();
 }
+
+//Now we want to call the values of a certain key name and sort the results from high to low. 
+function sortsHigh(stocks) {
+    var i = sorts(stocks, "2. high");
+    return i.reverse();
+}
+
